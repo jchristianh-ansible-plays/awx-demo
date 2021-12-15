@@ -13,17 +13,17 @@
                          tower_templates_dev | default([]) +
                          tower_templates_prod | default([]) }}"
 
-  vars_prompt:
-    - name: tower_env
-      prompt: Tower environment (dev/prod)
-
-  # this user will need to be able to create SAML tokens!
-    - name: tower_username
-      prompt: Username
-
-    - name: tower_password
-      prompt: Password
-      private: yes
+#  vars_prompt:
+#    - name: tower_env
+#      prompt: Tower environment (dev/prod)
+#
+#  # this user will need to be able to create SAML tokens!
+#    - name: tower_username
+#      prompt: Username
+#
+#    - name: tower_password
+#      prompt: Password
+#      private: yes
 
   tasks:
     - include_role:
