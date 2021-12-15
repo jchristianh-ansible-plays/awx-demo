@@ -1,0 +1,12 @@
+[tower_dev]
+dev-tower-1.thezengarden.net
+
+[tower_prod]
+dev-tower-2.thezengarden.net
+
+[tower:children]
+tower_dev
+tower_prod
+
+[tower:vars]
+tower_validate_certs=no
