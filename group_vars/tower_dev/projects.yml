@@ -8,9 +8,9 @@ tower_projects:
     wait: yes
 
 
-#  - name: TMO Hello
-#    organization: MSP Organization
-#    scm_type: git
-#    scm_url: https://git.thezengarden.net/chris/tmo-demo.git
-#    scm_branch: master
-#    wait: yes
+  - name: TMO Demo
+    organization: MSP Organization
+    scm_type: git
+    scm_url: https://git.thezengarden.net/chris/tmo-demo.git
+    scm_branch: master
+    wait: yes

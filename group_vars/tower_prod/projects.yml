@@ -6,11 +6,3 @@ tower_projects:
     scm_url: https://github.com/zjpeterson/test-playbooks.git
     scm_branch: v1.0.0
     wait: yes
-
-
-#  - name: TMO Hello
-#    organization: MSP Organization
-#    scm_type: git
-#    scm_url: https://git.thezengarden.net/chris/tmo-demo.git
-#    scm_branch: master
-#    wait: yes
