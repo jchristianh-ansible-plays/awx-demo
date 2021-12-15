@@ -17,3 +17,10 @@ tower_templates_dev:
           min: 0
           max: 1024
           default: hello from Dev
+
+
+  - name: TMO Hello - URI Examples
+    organization: MSP Organization
+    project: TMO Hello
+    playbook: "uri_examples.yml"
+    inventory: MSP Inventory
