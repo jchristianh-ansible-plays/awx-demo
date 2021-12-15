@@ -1,3 +1,4 @@
 ---
 tower_organizations:
   - name: MSP Organization
+    galaxy_credentials: Ansible Galaxy
