@@ -19,8 +19,8 @@ tower_templates_prod:
           default: hello from Prod
 
 
-  - name: TMO Hello - URI Examples
-    organization: MSP Organization
-    project: TMO Hello
-    playbook: "uri_examples.yml"
-    inventory: MSP Inventory
+#  - name: TMO Hello - URI Examples
+#    organization: MSP Organization
+#    project: TMO Hello
+#    playbook: "uri_examples.yml"
+#    inventory: MSP Inventory
