@@ -18,3 +18,33 @@ tower_templates_prod:
           max: 1024
           default: hello from Prod
 
+
+  - name: TMO Demo - URI Examples
+    organization: MSP Organization
+    project: TMO Demo
+    playbook: "uri_examples.yml"
+    inventory: MSP Inventory
+
+
+  - name: TMO Demo - Banner Config
+    organization: MSP Organization
+    project: TMO Demo
+    playbook: "deploy_banner.yml"
+    inventory: MSP Inventory
+    credentials: tmo-demo-machine-cred
+
+
+  - name: TMO Demo - Base Packages
+    organization: MSP Organization
+    project: TMO Demo
+    playbook: "deploy_base_pkgs.yml"
+    inventory: MSP Inventory
+    credentials: tmo-demo-machine-cred
+
+
+  - name: TMO Demo - Systems Management
+    organization: MSP Organization
+    project: TMO Demo
+    playbook: "manage_systems.yml"
+    inventory: MSP Inventory
+    credentials: tmo-demo-machine-cred
