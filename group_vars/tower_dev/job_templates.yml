@@ -31,6 +31,7 @@ tower_templates_dev:
     project: TMO Demo
     playbook: "deploy_banner.yml"
     inventory: MSP Inventory
+    credentials: tmo-demo-machine-cred
 
 
   - name: TMO Demo - Base Packages
@@ -38,6 +39,7 @@ tower_templates_dev:
     project: TMO Demo
     playbook: "deploy_base_pkgs.yml"
     inventory: MSP Inventory
+    credentials: tmo-demo-machine-cred
 
 
   - name: TMO Demo - Systems Management
@@ -45,3 +47,4 @@ tower_templates_dev:
     project: TMO Demo
     playbook: "manage_systems.yml"
     inventory: MSP Inventory
+    credentials: tmo-demo-machine-cred

@@ -39,4 +39,7 @@
         name: redhat_cop.tower_configuration.hosts
 
     - include_role:
+        name: redhat_cop.tower_configuration.credentials
+
+    - include_role:
         name: redhat_cop.tower_configuration.job_templates
