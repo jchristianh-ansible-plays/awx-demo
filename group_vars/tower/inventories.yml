@@ -2,5 +2,8 @@
 tower_inventories:
   - name: Lab Inventory
     organization: Red Hat Consulting
-#    variables:
-#      ansible_connection: local
+
+  - name: API Inventory
+    organization: Red Hat Consulting
+    variables:
+      ansible_connection: local
