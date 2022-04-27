@@ -1,2 +1,2 @@
 # awx-demo
-Just a demo of using https://github.com/redhat-cop/tower_configuration
+Just a demo making use of https://github.com/redhat-cop/tower_configuration.

@@ -1,12 +1,12 @@
-[tower_dev]
-dev-tower-1.thezengarden.net
+[tower_blue]
+aap-blue ansible_host=10.1.1.45
 
-[tower_prod]
-dev-tower-2.thezengarden.net
+[tower_green]
+aap-green ansible_host=10.1.1.66
 
 [tower:children]
-tower_dev
-tower_prod
+tower_blue
+tower_green
 
 [tower:vars]
 tower_validate_certs=no

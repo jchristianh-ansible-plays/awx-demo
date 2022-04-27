@@ -1,4 +1,4 @@
 ---
 tower_organizations:
-  - name: MSP Organization
+  - name: Red Hat Consulting
     galaxy_credentials: Ansible Galaxy

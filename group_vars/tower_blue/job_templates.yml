@@ -1,0 +1,22 @@
+---
+tower_templates_blue:
+  - name           : Debug Playbook (Blue)
+    organization   : Red Hat Consulting
+    project        : Tower Tests
+    playbook       : debug.yml
+    inventory      : Lab Inventory
+    survey_enabled : yes
+    survey:
+      name        : ""
+      description : ""
+      spec:
+        - question_name : Debug message
+          required      : yes
+          type          : text
+          variable      : __message
+          min           : 0
+          max           : 1024
+          default       : Hello from Blue
+
+
+...

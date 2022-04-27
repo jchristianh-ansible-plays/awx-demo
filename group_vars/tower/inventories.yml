@@ -1,6 +1,6 @@
 ---
 tower_inventories:
-  - name: MSP Inventory
-    organization: MSP Organization
+  - name: Lab Inventory
+    organization: Red Hat Consulting
 #    variables:
 #      ansible_connection: local
