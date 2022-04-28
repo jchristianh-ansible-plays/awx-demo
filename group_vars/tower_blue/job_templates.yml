@@ -26,7 +26,7 @@ tower_templates_blue:
     inventory      : BlueGreenTower
     credentials    : BlueGreenTower
     extra_vars     :
-      tower_env    : blue
+      tower_env    : green
 
 
 ...
