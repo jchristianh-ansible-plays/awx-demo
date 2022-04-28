@@ -3,7 +3,32 @@ tower_inventories:
   - name: Lab Inventory
     organization: Red Hat Consulting
 
-  - name: API Inventory
+  - name: BlueGreenTower
     organization: Red Hat Consulting
     variables:
       ansible_connection: local
+
+
+tower_inventory_sources:
+  - name: bluegreensrc
+    organization: Red Hat Consulting
+    inventory: BlueGreenTower
+    source: scm
+    source_project: BlueGreenTower
+    source_path: inventory
+    overwrite: yes
+    overwrite_vars: yes
+    update_on_launch: yes
+
+  - name: labinvsrc
+    organization: Red Hat Consulting
+    inventory: Lab Inventory
+    source: scm
+    source_project: Tower Tests
+    source_path: inventory/hosts
+    overwrite: yes
+    overwrite_vars: yes
+    update_on_launch: yes
+
+
+...

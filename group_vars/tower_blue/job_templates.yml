@@ -23,7 +23,7 @@ tower_templates_blue:
     organization   : Red Hat Consulting
     project        : BlueGreenTower
     playbook       : configure_tower.yml
-    inventory      : Tower
+    inventory      : BlueGreenTower
     credentials    : BlueGreenTower
     extra_vars     :
       tower_env    : blue

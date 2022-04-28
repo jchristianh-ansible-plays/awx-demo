@@ -27,6 +27,9 @@
         name: redhat_cop.tower_configuration.inventories
 
     - include_role:
+        name: redhat_cop.tower_configuration.inventory_sources
+
+    - include_role:
         name: redhat_cop.tower_configuration.hosts
 
     - include_role:
