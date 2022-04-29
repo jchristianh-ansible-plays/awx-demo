@@ -4,9 +4,13 @@ aap-blue ansible_host=10.1.1.45
 [tower_green]
 aap-green ansible_host=10.1.1.66
 
+[tower_purple]
+aap-purple ansible_host=10.1.1.92
+
 [tower:children]
 tower_blue
 tower_green
+tower_purple
 
 [tower:vars]
 tower_validate_certs=no

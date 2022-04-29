@@ -1,0 +1,32 @@
+---
+tower_templates_purple:
+  - name           : Debug Playbook (Purple)
+    organization   : Red Hat Consulting
+    project        : Tower Tests
+    playbook       : debug.yml
+    inventory      : Lab Inventory
+    survey_enabled : yes
+    survey:
+      name        : ""
+      description : ""
+      spec:
+        - question_name : Debug message
+          required      : yes
+          type          : text
+          variable      : __message
+          min           : 0
+          max           : 1024
+          default       : Hello from Purple
+
+
+  - name           : BlueGreenDeploy
+    organization   : Red Hat Consulting
+    project        : BlueGreenTower
+    playbook       : configure_tower.yml
+    inventory      : BlueGreenTower
+    credentials    : BlueGreenTower
+    extra_vars     :
+      tower_env    : purple
+
+
+...

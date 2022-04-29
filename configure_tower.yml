@@ -13,7 +13,8 @@
     tower_hostname  : "{{ ansible_host }}"
     tower_templates : "{{ tower_templates_global +
                           tower_templates_blue   | default([]) +
-                          tower_templates_green  | default([]) }}"
+                          tower_templates_green  | default([]) +
+                          tower_templates_purple | default([]) }}"
 
 
   tasks:
