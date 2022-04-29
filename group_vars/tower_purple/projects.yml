@@ -12,7 +12,7 @@ tower_projects:
     organization: Red Hat Consulting
     scm_type: git
     scm_url: https://github.com/jchristianh-ansible-plays/awx-demo.git
-    scm_branch: purple
+    scm_branch: main
     wait: yes
 
 
