@@ -1,6 +1,6 @@
 ---
-- name: Configure Tower in environment {{ tower_env }}
-  hosts: tower_{{ tower_env }}
+- name: Configure Tower in environment {{ __tower_env }}
+  hosts: tower_{{ __tower_env }}
   connection: local
   gather_facts: no
 
@@ -10,6 +10,7 @@
 
 
   vars:
+    __tower_env     : "{{ tower_env | default('blue') }}"
     tower_hostname  : "{{ ansible_host }}"
     tower_templates : "{{ tower_templates_global +
                           tower_templates_blue   | default([]) +

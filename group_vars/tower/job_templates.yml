@@ -19,4 +19,31 @@ tower_templates_global:
           default       : Hello from Somewhere
 
 
+  - name           : BlueGreenDeploy (Blue)
+    organization   : Red Hat Consulting
+    project        : BlueGreenTower
+    playbook       : configure_tower.yml
+    inventory      : BlueGreenTower
+    credentials    : BlueGreenTower
+    extra_vars     :
+      tower_env    : blue
+
+  - name           : BlueGreenDeploy (Green)
+    organization   : Red Hat Consulting
+    project        : BlueGreenTower
+    playbook       : configure_tower.yml
+    inventory      : BlueGreenTower
+    credentials    : BlueGreenTower
+    extra_vars     :
+      tower_env    : green
+
+  - name           : BlueGreenDeploy (Purple)
+    organization   : Red Hat Consulting
+    project        : BlueGreenTower
+    playbook       : configure_tower.yml
+    inventory      : BlueGreenTower
+    credentials    : BlueGreenTower
+    extra_vars     :
+      tower_env    : purple
+
 ...

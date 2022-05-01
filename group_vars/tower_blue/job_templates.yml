@@ -19,14 +19,4 @@ tower_templates_blue:
           default       : Hello from Blue
 
 
-  - name           : BlueGreenDeploy
-    organization   : Red Hat Consulting
-    project        : BlueGreenTower
-    playbook       : configure_tower.yml
-    inventory      : BlueGreenTower
-    credentials    : BlueGreenTower
-    extra_vars     :
-      tower_env    : green
-
-
 ...
