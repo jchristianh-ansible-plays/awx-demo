@@ -5,6 +5,7 @@ tower_templates_green:
     project        : Tower Tests
     playbook       : debug.yml
     inventory      : Lab Inventory
+    credentials    : lab-machine-cred
     survey_enabled : yes
     survey:
       name        : ""
