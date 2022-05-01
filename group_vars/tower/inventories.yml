@@ -8,6 +8,9 @@ tower_inventories:
     variables:
       ansible_connection: local
 
+  - name: HAProxy-BlueGreenTower
+    organization: Red Hat Consulting
+
 
 tower_inventory_sources:
   - name: bluegreensrc
@@ -16,6 +19,16 @@ tower_inventory_sources:
     source: scm
     source_project: BlueGreenTower
     source_path: inventory
+    overwrite: yes
+    overwrite_vars: yes
+    update_on_launch: yes
+
+  - name: haproxysrc
+    organization: Red Hat Consulting
+    inventory: HAProxy-BlueGreenTower
+    source: scm
+    source_project: HAProxy-BlueGreenTower
+    source_path: inventory/hosts
     overwrite: yes
     overwrite_vars: yes
     update_on_launch: yes

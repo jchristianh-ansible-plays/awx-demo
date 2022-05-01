@@ -5,6 +5,7 @@ tower_templates_global:
     project        : Tower Tests
     playbook       : debug.yml
     inventory      : Lab Inventory
+    credentials    : lab-machine-cred
     survey_enabled : yes
     survey:
       name        : ""
@@ -45,5 +46,15 @@ tower_templates_global:
     credentials    : BlueGreenTower
     extra_vars     :
       tower_env    : purple
+
+  - name           : HAProxy-BlueGreenTower
+    organization   : Red Hat Consulting
+    project        : HAProxy-BlueGreenTower
+    playbook       : haproxy.yml
+    inventory      : HAProxy-BlueGreenTower
+    credentials    : lab-machine-cred
+    extra_vars     :
+      __haproxy_use_backend: aap_blue
+
 
 ...

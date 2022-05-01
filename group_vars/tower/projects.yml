@@ -10,4 +10,14 @@ tower_projects_global:
     scm_update_cache_timeout: 300
 
 
+  - name: HAProxy-BlueGreenTower
+    organization: Red Hat Consulting
+    scm_type: git
+    scm_url: https://github.com/jchristianh-ansible-plays/haproxy.git
+    scm_branch: main
+    wait: yes
+    scm_update_on_launch: yes
+    scm_update_cache_timeout: 300
+
+
 ...
