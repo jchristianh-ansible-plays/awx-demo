@@ -1,5 +1,5 @@
 ---
-tower_projects:
+tower_projects_blue:
   - name: Tower Tests
     organization: Red Hat Consulting
     scm_type: git

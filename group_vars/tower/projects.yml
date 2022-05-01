@@ -1,5 +1,5 @@
 ---
-tower_projects:
+tower_projects_global:
   - name: BlueGreenTower
     organization: Red Hat Consulting
     scm_type: git
