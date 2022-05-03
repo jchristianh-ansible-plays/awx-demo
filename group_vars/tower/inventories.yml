@@ -21,7 +21,6 @@ tower_inventory_sources:
     source_path: inventory
     overwrite: yes
     overwrite_vars: yes
-    update_on_launch: yes
 
   - name: haproxysrc
     organization: Red Hat Consulting
@@ -31,7 +30,6 @@ tower_inventory_sources:
     source_path: inventory/hosts
     overwrite: yes
     overwrite_vars: yes
-    update_on_launch: yes
 
   - name: labinvsrc
     organization: Red Hat Consulting
@@ -41,7 +39,6 @@ tower_inventory_sources:
     source_path: inventory/hosts
     overwrite: yes
     overwrite_vars: yes
-    update_on_launch: yes
 
 
 ...
