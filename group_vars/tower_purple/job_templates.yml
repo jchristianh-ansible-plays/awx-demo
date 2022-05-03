@@ -20,13 +20,14 @@ tower_templates_purple:
           default       : Hello from Purple
 
 
-  - name               : FileCreationSingleTest
-    organization       : Red Hat Consulting
-    project            : Tower Tests
-    playbook           : file-creation-single.yml
-    inventory          : Lab Inventory
-    credentials        : lab-machine-cred
-    allow_simultaneous : yes
+  - name                    : FileCreationSingleTest
+    organization            : Red Hat Consulting
+    project                 : Tower Tests
+    playbook                : file-creation-single.yml
+    inventory               : Lab Inventory
+    credentials             : lab-machine-cred
+    allow_simultaneous      : yes
+    ask_variables_on_launch : yes
 
 
   - name               : FileExistenceTest

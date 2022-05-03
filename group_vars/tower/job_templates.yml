@@ -1,25 +1,5 @@
 ---
 tower_templates_global:
-  - name           : Debug Playbook (Global)
-    organization   : Red Hat Consulting
-    project        : Tower Tests
-    playbook       : debug.yml
-    inventory      : Lab Inventory
-    credentials    : lab-machine-cred
-    survey_enabled : yes
-    survey:
-      name        : ""
-      description : ""
-      spec:
-        - question_name : Debug message
-          required      : yes
-          type          : text
-          variable      : __message
-          min           : 0
-          max           : 1024
-          default       : Hello from Somewhere
-
-
   - name           : BlueGreenDeploy (Blue)
     organization   : Red Hat Consulting
     project        : BlueGreenTower
