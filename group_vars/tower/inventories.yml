@@ -11,6 +11,9 @@ tower_inventories:
   - name: HAProxy-BlueGreenTower
     organization: Red Hat Consulting
 
+  - name: container_inventory
+    organization: Red Hat Consulting
+
 
 tower_inventory_sources:
   - name: bluegreensrc
