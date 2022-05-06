@@ -14,6 +14,9 @@ tower_inventories:
   - name: container_inventory
     organization: Red Hat Consulting
 
+  - name: placeholder
+    organization: Red Hat Consulting
+
 
 tower_inventory_sources:
   - name: bluegreensrc
