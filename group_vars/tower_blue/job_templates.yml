@@ -79,7 +79,7 @@ tower_templates_blue:
   - name                    : InvFromVars - Build (Flow 1)
     organization            : Red Hat Consulting
     project                 : Tower Tests
-    playbook                : file-removal-test.yml
+    playbook                : inv-from-vars.yml
     inventory               : placeholder
     credentials             : Flow 1
     allow_simultaneous      : yes
@@ -89,7 +89,7 @@ tower_templates_blue:
   - name                    : InvFromVars - Cleanup (Flow 1)
     organization            : Red Hat Consulting
     project                 : Tower Tests
-    playbook                : file-removal-test.yml
+    playbook                : inv-from-vars.yml
     inventory               : placeholder
     credentials             : Flow 1
     allow_simultaneous      : yes
