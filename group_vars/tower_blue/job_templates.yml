@@ -20,6 +20,26 @@ tower_templates_blue:
           default       : Hello from Blue
 
 
+  - name           : Debug Playbook (Flow 1)
+    organization   : Red Hat Consulting
+    project        : Tower Tests
+    playbook       : debug.yml
+    inventory      : container_inventory
+    credentials    : lab-machine-cred
+    survey_enabled : yes
+    survey:
+      name        : ""
+      description : ""
+      spec:
+        - question_name : Debug message
+          required      : yes
+          type          : text
+          variable      : __message
+          min           : 0
+          max           : 1024
+          default       : Hello from the flow...
+
+
   - name                    : FileCreationTest
     organization            : Red Hat Consulting
     project                 : Tower Tests
@@ -30,20 +50,70 @@ tower_templates_blue:
     ask_variables_on_launch : yes
 
 
-  - name               : FileExistenceTest
+  - name                    : FileRemovalTest
+    organization            : Red Hat Consulting
+    project                 : Tower Tests
+    playbook                : file-removal-test.yml
+    inventory               : Lab Inventory
+    credentials             : lab-machine-cred
+    allow_simultaneous      : yes
+    ask_variables_on_launch : yes
+
+
+  - name         : FileExistenceTest
+    organization : Red Hat Consulting
+    project      : Tower Tests
+    playbook     : file-existence-test.yml
+    inventory    : Lab Inventory
+    credentials  : lab-machine-cred
+
+
+  - name         : SplitHostJobLaunch
+    organization : Red Hat Consulting
+    project      : Tower Tests
+    playbook     : split-host-job-launch.yml
+    inventory    : Lab Inventory
+    credentials  : lab-machine-cred
+
+
+  - name                    : InvFromVars - Build (Flow 1)
+    organization            : Red Hat Consulting
+    project                 : Tower Tests
+    playbook                : file-removal-test.yml
+    inventory               : placeholder
+    credentials             : Flow 1
+    allow_simultaneous      : yes
+    ask_variables_on_launch : yes
+
+
+  - name                    : InvFromVars - Cleanup (Flow 1)
+    organization            : Red Hat Consulting
+    project                 : Tower Tests
+    playbook                : file-removal-test.yml
+    inventory               : placeholder
+    credentials             : Flow 1
+    allow_simultaneous      : yes
+    ask_variables_on_launch : yes
+    extra_vars              :
+      __host_state          : absent
+
+
+  - name               : MachineTest (Flow 1)
+    organization       : Red Hat Consulting
+    project            : Tower Tests
+    playbook           : machine-test.yml
+    inventory          : container_inventory
+    credentials        : lab-machine-cred
+    allow_simultaneous : yes
+
+
+  - name               : FileExistenceTest (Flow 1)
     organization       : Red Hat Consulting
     project            : Tower Tests
     playbook           : file-existence-test.yml
-    inventory          : Lab Inventory
+    inventory          : container_inventory
     credentials        : lab-machine-cred
-
-
-  - name               : SplitHostJobLaunch
-    organization       : Red Hat Consulting
-    project            : Tower Tests
-    playbook           : split-host-job-launch.yml
-    inventory          : Lab Inventory
-    credentials        : lab-machine-cred
+    allow_simultaneous : yes
 
 
 ...
